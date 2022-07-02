@@ -8,6 +8,9 @@ yarn build or npm run stabuildrt
 
 # Explanation
 
+This repo was built, based on the assessment found here
+https://github.com/ElevateSecurity/technical-interview/blob/master/Frontent.md
+
 This app is processes mockData and then displays Employee Incidents, based on a severity of low, medium, high or critical
 
 # Overall Approach
