@@ -1,0 +1,166 @@
+.incidents {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.incidents > div {
+  margin: 5rem;
+}
+
+.incidents-title {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #fff;
+}
+.triangle-container {
+  padding-bottom: 3rem;
+}
+.triangle {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  border-left: 25px solid transparent;
+  border-bottom: 40px solid rgb(255, 0, 157);
+  border-right: 25px solid transparent;
+  width: 0;
+  border-bottom-right-radius: 80px 70px;
+  border-bottom-left-radius: 0 0;
+  transform: rotate(160deg);
+  animation-name: pulse1;
+  animation-duration: 2s;
+}
+.triangle:after {
+  content: "";
+  position: absolute;
+  border-left: 25px solid transparent;
+  border-bottom: 40px solid CornflowerBlue;
+  border-right: 25px solid transparent;
+  width: 0;
+  left: -54px;
+  top: -12px;
+  border-bottom-right-radius: 80px 70px;
+  border-bottom-left-radius: 0 0;
+  transform: rotate(120deg);
+  animation-name: pulse2;
+  animation-duration: 2s;
+}
+.triangle:before {
+  content: "";
+  position: absolute;
+  border-left: 25px solid transparent;
+  border-bottom: 40px solid yellowgreen;
+  border-right: 25px solid transparent;
+  width: 0;
+  top: -30px;
+  left: -29px;
+  border-bottom-right-radius: 80px 70px;
+  border-bottom-left-radius: 0 0;
+  transform: rotate(240deg);
+  animation-name: pulse3;
+  animation-duration: 2s;
+}
+
+@keyframes pulse1 {
+  0% {
+    transform: rotate(160deg);
+  }
+
+  70% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(160deg);
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    transform: rotate(120deg);
+  }
+
+  70% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(120deg);
+  }
+}
+
+@keyframes pulse3 {
+  0% {
+    transform: rotate(240deg);
+  }
+
+  70% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(240deg);
+  }
+}
+
+@media (max-width: 580px) {
+  .incidents > div {
+    margin: 0.5rem;
+  }
+
+  .incidents-title {
+    top: 30px;
+    left: 500px;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    width: 100vh;
+  }
+  .triangle {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    border-left: 25px solid transparent;
+    border-bottom: 40px solid rgb(255, 0, 157);
+    border-right: 25px solid transparent;
+    width: 0;
+    border-bottom-right-radius: 80px 70px;
+    border-bottom-left-radius: 0 0;
+    transform: rotate(160deg);
+    animation-name: pulse1;
+    animation-duration: 2s;
+  }
+  .triangle:after {
+    content: "";
+    position: absolute;
+    border-left: 25px solid transparent;
+    border-bottom: 40px solid CornflowerBlue;
+    border-right: 25px solid transparent;
+    width: 0;
+    left: -54px;
+    top: -12px;
+    border-bottom-right-radius: 80px 70px;
+    border-bottom-left-radius: 0 0;
+    transform: rotate(120deg);
+    animation-name: pulse2;
+    animation-duration: 2s;
+  }
+  .triangle:before {
+    content: "";
+    position: absolute;
+    border-left: 25px solid transparent;
+    border-bottom: 40px solid yellowgreen;
+    border-right: 25px solid transparent;
+    width: 0;
+    top: -30px;
+    left: -29px;
+    border-bottom-right-radius: 80px 70px;
+    border-bottom-left-radius: 0 0;
+    transform: rotate(240deg);
+    animation-name: pulse3;
+    animation-duration: 2s;
+  }
+}

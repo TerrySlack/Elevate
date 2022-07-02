@@ -1,0 +1,32 @@
+.card-container {
+  height: auto;
+  width: 300px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.3em;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.card-title-wrapper {
+  width: 100%;
+  padding-top: 1em;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+  text-transform: capitalize;
+}
+
+.card-data-wrapper {
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+}

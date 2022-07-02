@@ -1,0 +1,72 @@
+/* css reset to remove the scrollbar,until it's needed */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  background: rgb(238, 237, 246);
+  background: linear-gradient(
+    15deg,
+    rgba(238, 237, 246, 1) 0%,
+    rgba(9, 9, 121, 1) 17%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 3px;
+  margin-right: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app {
+  width: 100%;
+}
+
+.low {
+  background: rgb(10, 10, 10);
+  background: linear-gradient(
+    61deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(0, 172, 170, 1) 23%,
+    rgba(85, 32, 64, 1) 97%
+  );
+}
+
+.medium {
+  background: rgb(10, 10, 10);
+  background: linear-gradient(
+    61deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(85, 32, 64, 1) 17%,
+    rgba(0, 172, 46, 1) 23%
+  );
+}
+
+.high {
+  background: rgb(10, 10, 10);
+  background: linear-gradient(
+    243deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(85, 32, 64, 1) 17%,
+    rgba(133, 0, 172, 1) 23%
+  );
+}
+
+.critical {
+  background: rgb(10, 10, 10);
+  background: linear-gradient(
+    151deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(85, 32, 64, 1) 17%,
+    rgba(172, 0, 105, 1) 23%
+  );
+}

@@ -1,0 +1,20 @@
+.loader-container {
+  width: 100%;
+}
+
+.message {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+.text-padding {
+  padding: 1rem;
+}
+.climbingbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
